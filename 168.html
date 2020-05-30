@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>1_Variable</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log("====================================");
+			console.log("變數：基本型別 (Primitive Data Type)");
+			var a;
+			a = 20;
+			var b = 23.3;
+			var c = "Hello Javascript";
+			var d = true;
+			var e;
+			var f = null;
+
+			console.log("a: " + a);
+			console.log("b: " + b);
+			console.log("c: " + c);
+			console.log("d: " + d);
+			console.log("e: " + e);
+			console.log("f: " + f);
+
+			console.log(" * 基本型別大部分，都可以使用typeof來判斷型別");
+			console.log("typeof a: " + typeof a);
+			console.log("typeof b: " + typeof b);
+			console.log("typeof c: " + typeof c);
+			console.log("typeof d: " + typeof d);
+			console.log("typeof e: " + typeof e);
+			console.log("typeof f: " + typeof f);
+
+
+
+			console.log("====================================");
+			console.log("變數：參考型別 (Reference Data Type)");
+			var person = {
+			   firstName: "John", 
+			   lastName: "Doe", 
+			   age: 50, 
+			   eyeColor: "blue"
+			};
+			console.log("物件 person：", person);
+
+			var cars = ["Saab", "Volvo", "BMW"];
+			console.log("陣列 cars：", cars);
+
+			function sum (a, b) {
+				return a + b;
+			}
+			console.log("函式 sum：", sum);
+
+			console.log(" * 參考型別大部分，都不可以使用typeof來判斷型別");
+			console.log("typeof person：" + typeof person);
+			console.log("typeof cars：" + typeof cars);
+			console.log("typeof sum：" + typeof sum);
+		</script>
+	</body>
+</html>

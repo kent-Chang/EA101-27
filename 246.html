@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>2_Prilimitve_Type_Transform</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log("====================================");
+			console.log("自動轉換");
+			var x = 16 + 4 + "volvo";
+			console.log(x); // 20volvo
+
+			var y = "volvo" + 16 + 4;
+			console.log(y); // volvo164
+
+			var str = "abc";
+			var num = 123;
+			var bool = true;
+
+			console.log(num + str); // 123abc
+			console.log(num + bool); // 124
+			console.log(str + bool); //abctrue
+			console.log(false + num); // 123
+
+			console.log("====================================");
+			console.log("強制轉換");
+			console.log("string to number");
+			
+			console.log(parseInt("53"));
+			console.log(parseFloat("53.323"));
+			console.log(Number("53.232"));
+
+			console.log(parseInt("abc"));
+			
+			console.log("====================================");
+			console.log("強制轉換");
+			console.log("number to string");
+
+			var num = 53;
+
+			var a = String(num);
+			var b = num.toString();
+			var c = "" + num;
+			console.log(typeof a);
+			console.log(typeof b);
+			console.log(typeof c);
+
+			console.log("====================================");
+			console.log("強制轉換");
+			console.log("boolean to number");
+
+			console.log(parseInt(true));
+			console.log(Number(true));
+			console.log(Number(false));
+
+
+			console.log("====================================");
+			console.log("強制轉換");
+			console.log("boolean to string");
+
+			var bool = true;
+
+			var d = String(bool);
+			var e = bool.toString();
+			var f = "" + bool;
+
+			console.log(typeof d);
+			console.log(typeof e);
+			console.log(typeof f);
+
+		</script>
+	</body>
+</html>
